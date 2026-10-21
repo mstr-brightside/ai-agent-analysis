@@ -1,0 +1,41 @@
+id,prompt,label,note
+h01,"we need multi-tenant billing in the saas app. dont write any code yet - lay out the steps, which tables change, and what order we ship it in",plan,Explicitly asks for steps and ordering before code
+h02,what does the useEffect cleanup function actually do when the component re-renders but doesn't unmount?,research,Concept question about a library; no change requested
+h03,Add a /healthz endpoint to the FastAPI app that returns db connectivity and the current git sha,implement,New endpoint is new behaviour
+h04,"getting TypeError: Cannot read properties of undefined (reading 'map') on the orders page right after login, only in the prod build. find it and fix it",debug,Error with a request to find the cause and fix it
+h05,"parseDuration in utils/time.go has zero tests. cover the edge cases: negative values, empty string, compound units like 1h30m",test,Tests for an existing function
+h06,"OrderService.java is 1800 lines. split it into smaller classes by responsibility, behaviour has to stay identical",refactor,Structural split with behaviour explicitly unchanged
+h07,can you go over PR #412 and tell me if there's anything risky before I merge? mostly worried about the migration,review,Judging a change for risk before merge
+h08,"bump node 18 -> 22 in the CI matrix and .nvmrc, and make the pipeline cache node_modules between runs",ops,CI and toolchain change
+h09,ok do the next one,unknown,No way to tell what the next one is from the request alone
+h10,why is our webpack build taking 4 minutes?? just want to understand where the time goes for now,research,"Ambiguous: could be ops or debug, but 'just want to understand ... for now' rules out a change"
+h11,"pagination for /api/products. cursor based, default 50 per page",implement,Terse feature request
+h12,The nightly cron that syncs Stripe invoices silently skipped about 200 customers last night and the logs show no errors. Figure out what happened and patch it.,debug,Wrong result; find cause and fix
+h13,"Thinking about moving auth from session cookies to JWTs. Can you draft how the migration would go, step by step, without logging out existing users? Not implementing yet.",plan,Step-by-step migration plan; work has not started
+h14,how do postgres advisory locks differ from SELECT ... FOR UPDATE and which one fits a job queue better,research,Comparing options; no code change asked
+h15,"write pytest fixtures + tests for the invoice PDF generator, mock out the S3 upload",test,Tests for existing code
+h16,set up pre-commit with ruff and mypy so they run on every commit,ops,Developer tooling setup
+h17,convert the callback-style functions in lib/fs-helpers.js to async/await. no behaviour changes pls,refactor,Restructure with same behaviour
+h18,replace moment.js with date-fns everywhere,refactor,"Ambiguous: swaps a dependency (ops-ish) or could read as implement, but the intent is the same behaviour with different internals"
+h19,"Audit the auth middleware for security holes. Don't fix anything, just list what you find ranked by severity.",review,Judging existing code for risk; no fix requested
+h20,segfault in the rust ffi wrapper when passing an empty slice to compress(). repro: cargo test ffi::empty,debug,Crash with a repro; implied fix
+h21,"Build a small Go CLI that reads a CSV of URLs and checks each one for broken links, concurrently, max 10 in flight",implement,New tool built from scratch
+h22,terraform: add an S3 bucket for user uploads with versioning and a lifecycle rule that moves objects to glacier after 90 days,ops,"Infrastructure as code; could look like implement, but it is infrastructure"
+h23,same thing as before but for the other service,unknown,Refers to earlier context that the request does not contain
+h24,test_checkout.py::test_concurrent_cart fails on CI roughly 1 run in 5. make it stable,debug,Ambiguous: touches a test (test) but the main intent is finding why it fails intermittently and fixing it
+h25,"I want to add offline mode to the React Native app. what would the architecture look like - sync strategy, conflict resolution, local storage? outline it before we touch anything",plan,"Ambiguous with research (asks how options look), but it is designing a feature not yet built"
+h26,"walk me through what happens between git push and the deploy finishing in our setup, I'm new on the team",research,Understanding existing pipeline; no change asked
+h27,is this regex safe from ReDoS? ^(a+)+$ - we use it to validate usernames,review,Ambiguous with research; judged review because it asks for a risk verdict on code already in use
+h28,"move all the hardcoded strings in components/ into an i18n messages file, english text must stay exactly the same",refactor,"Ambiguous with implement (groundwork for i18n), but only strings move and the output is unchanged"
+h29,"add a dark mode toggle on the settings screen, persist the choice in localStorage",implement,New feature
+h30,memory in the node worker keeps climbing until it OOMs after ~6h. heap snapshot is at /tmp/heap.heapsnapshot. track down the leak,debug,Failure; find the cause
+h31,Our Django views have no integration tests at all. Could you add some for the signup and password reset flows using the test client?,test,Tests for existing flows
+h32,k8s deployment for the api keeps getting OOMKilled. raise the memory limit to 1Gi and add an HPA that scales on CPU at 70%,ops,"Ambiguous with debug because of the failure, but the developer already chose the fix and asks for a deployment config change"
+h33,Kannst du das bitte nochmal machen?,unknown,German for 'can you do that again please'; the task itself is not stated
+h34,quick sanity check before I run this on prod: ALTER TABLE users ADD COLUMN plan_tier text NOT NULL DEFAULT 'free' on a 40M row table. ok?,review,Readiness verdict on a change
+h35,"Нужно добавить экспорт отчетов в Excel. Составь список задач с оценкой по каждой, код пока не пиши",plan,Russian: task list with estimates for report export to Excel; no code yet
+h36,Does SQLAlchemy 2.0's session.merge() hit the DB every time or does it check the identity map first?,research,How a library works
+h37,spike a quick proof of concept for websocket notifications so we can see if it's even viable,implement,"Ambiguous with plan/research (evaluating viability), but the ask is to build working code"
+h38,"the snapshot tests for <Button> are basically useless. rewrite them as React Testing Library tests that assert actual behaviour - clicks, disabled state, aria labels",test,Improving existing tests
+h39,kill the copy-pasted retry logic in the three http clients and make them share one helper,refactor,Deduplication with no behaviour change
+h40,"migrate the monorepo from .eslintrc to the eslint flat config, same rules",ops,Developer tooling change

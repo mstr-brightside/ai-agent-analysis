@@ -1,0 +1,14 @@
+{
+  "name": "@agentspend/sources",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude Code JSONL, Codex JSONL and Cursor SQLite adapters.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@agentspend/core": "*",
+    "zod": "^4.6.6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@agentspend/eval",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Classifier evaluation against hand labels.",
+  "type": "module",
+  "exports": {
+    ".": "./src/main.ts"
+  },
+  "dependencies": {
+    "@agentspend/core": "*",
+    "@agentspend/server-node": "*",
+    "@agentspend/sources": "*",
+    "@agentspend/store": "*",
+    "zod": "^4.6.6"
+  }
+}

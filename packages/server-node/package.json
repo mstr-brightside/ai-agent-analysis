@@ -1,0 +1,17 @@
+{
+  "name": "@agentspend/server-node",
+  "version": "0.1.0",
+  "private": true,
+  "description": "node:http transport, env checker and CLI entry points.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@agentspend/contract": "*",
+    "@agentspend/core": "*",
+    "@agentspend/sources": "*",
+    "@agentspend/store": "*",
+    "zod": "^4.6.6"
+  }
+}

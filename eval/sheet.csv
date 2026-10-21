@@ -1,0 +1,31 @@
+id,prompt,tools
+claude:ced1a459-1bb6-4e35-8908-9b41d4deb198.jsonl:35,Refactor internal/api/handlers.go to remove the duplication between the two handlers. No behaviour change.,
+claude:3ad56625-780c-49b0-9e93-eca31a55b4f5.jsonl:1,Add a regression test for the bug we just fixed in pyproject.toml.,Glob
+claude:097c85cb-8e50-484f-824c-504865eb1fa1.jsonl:31,Increase coverage on src/hooks/useRecipes.ts; focus on edge cases around stale-while-revalidate caching.,Grep; Write; Grep; Bash(git diff --stat); Edit; Glob; Glob
+claude:f91bef70-05d9-49c7-b0cf-b9d0ce9eedb0.jsonl:1,Is the error handling in internal/stock/reconcile.go good enough to ship? Be specific.,Grep; Glob; Glob; Write; Grep; Grep; Bash(pytest -q); Write
+claude:b722a3ee-e6f2-4b83-9da3-a569a8d7499c.jsonl:41,Is the error handling in ledger/parse.py good enough to ship? Be specific.,
+claude:0d3e6c7c-e368-47fb-b26b-dd647ac29d84.jsonl:1,Add cursor-based pagination. Keep the public API unchanged.,Glob; Bash(pytest -q); Bash(npm test); Glob; Grep; Edit; Glob; Glob; Grep; Bash(pytest -q); Write
+claude:2be89086-273c-49e2-bdde-d3803eb95b36.jsonl:16,"Before writing code, give me a plan for adding CSV export with currency formatting to inventory-service. List the files you'd touch and the risks.",Edit; Edit
+claude:3888cf6f-f20f-4113-9752-143c54690953.jsonl:17,Write table-driven tests for pyproject.toml covering context cancellation.,Read; Write
+claude:d1895bdb-dab3-4094-8525-cab6f86b1ff3.jsonl:1,Create src/components/__tests__/RecipeCard.test.tsx with a middleware that does CSV export with currency formatting.,Write; Read; Read; Read; Grep; Write; Glob; Glob; Grep; Edit; Grep; Edit; Grep; Edit
+claude:cb1e3b91-7d6d-4f51-a92a-37c448caff53.jsonl:23,What are the trade-offs between polling and a trigger for decimal rounding here?,Grep
+claude:b722a3ee-e6f2-4b83-9da3-a569a8d7499c.jsonl:43,What are the trade-offs between a materialised view and a channel for context cancellation here?,Write; Grep; Write; Grep; Grep
+claude:b7dab20e-479d-4d1b-b6e4-8ac4e6451e08.jsonl:42,Set up a Makefile target for lint + test + build.,Write
+claude:faad242a-1a49-4e33-b078-05b4c184c7ab.jsonl:29,Look at internal/api/handlers.go for anything that would break under concurrent writes.,
+claude:46005915-6314-4bc3-9f01-e1d44787f85f.jsonl:1,Why does pyproject.toml return the wrong total when there are duplicate SKUs?,Bash(git diff --stat); Write; Write
+claude:83faac57-2f56-4652-866d-e486522c4f8d.jsonl:1,Create src/api/client.ts with a middleware that does optimistic UI updates for favourites.,Write
+claude:2be89086-273c-49e2-bdde-d3803eb95b36.jsonl:7,Rename reducer across the repo and update imports.,Read; Edit; Glob; Grep
+codex:rollout-2026-08-21T15-00-00-c1b2619c-2870-41f9-bbad-a0aedef3b333.jsonl:21,Write a Dockerfile and a GitHub Actions workflow that runs the tests on PRs.,"shell(sed -n '1,80p' internal/api/handlers.go)"
+codex:rollout-2026-08-07T17-00-00-d9096026-0896-42c0-8e00-fe594778da99.jsonl:2,Extract reducer out of ledger/report.py into its own module.,shell(pytest -q); shell(pytest -q)
+codex:rollout-2026-08-13T15-00-00-a81bc359-3a26-43f4-adbb-91de662782f4.jsonl:27,"Before writing code, give me a plan for adding a retry with backoff on the vendor client to recipe-web. List the files you'd touch and the risks.","shell(pytest -q); shell(sed -n '1,80p' vite.config.ts); shell(npm test)"
+codex:rollout-2026-09-12T08-00-00-9091904d-bf25-4df6-8bd9-88a7ac71cb90.jsonl:29,Let's scope cursor-based pagination. What are the smallest steps? Don't code yet.,shell(go test ./...)
+codex:rollout-2026-08-07T17-00-00-d9096026-0896-42c0-8e00-fe594778da99.jsonl:12,How does click handle schema validation? Point me at the relevant source in node_modules/vendor.,"shell(sed -n '1,80p' ledger/report.py); shell(pytest -q); shell(pytest -q)"
+codex:rollout-2026-08-09T18-00-00-0116ccc5-0b7a-4cd7-ad35-8d7fc1d3b88d.jsonl:27,Tests in src/hooks/useRecipes.ts fail with 'panic: runtime error: index out of range [3] with length 3'. Find the cause.,shell(pytest -q)
+codex:rollout-2026-09-09T10-00-00-7196c83e-1d1f-46bb-b528-7418db1901b3.jsonl:2,Add a regression test for the bug we just fixed in internal/stock/reconcile.go.,"shell(npm test); shell(pytest -q); shell(npm test); shell(sed -n '1,80p' migrations/0007_add_sku_index.sql)"
+codex:rollout-2026-09-08T08-00-00-c6886ec3-eaf4-4650-82ad-ee37d6a711ac.jsonl:18,How does zod handle decimal rounding? Point me at the relevant source in node_modules/vendor.,shell(go test ./...); shell(go test ./...); shell(npm test); shell(npm test)
+cursor:bubbleId:a9d50d94-d1be-4149-a450-4f063d21993b:d0aa7a36-29c4-463c-ad44-f38b75470b00,Set up a Makefile target for lint + test + build.,run_terminal_cmd
+cursor:bubbleId:4cfb9fc4-792b-4597-a644-8a00dcb09f2d:15829dd0-71f7-45d0-ac2e-7b1f29552caf,Add idempotent stock adjustments. Keep the public API unchanged.,edit_file; edit_file; run_terminal_cmd
+cursor:bubbleId:9f7d32b8-5411-40d8-aaf4-e91b8fca586b:ee7e5213-59a3-47c4-a557-ad99ec881f9d,How does click handle schema validation? Point me at the relevant source in node_modules/vendor.,grep_search
+cursor:bubbleId:70f56e26-ea10-42dc-ad21-72f6cf61ede2:1cdd744c-2dc5-4022-ad41-85556582fb04,Why does ledger/parse.py return the wrong total when there are duplicate SKUs?,grep_search; grep_search
+cursor:bubbleId:21ef2b01-43e1-46f6-ad40-0e8d0f31747a:580d278b-484d-45b5-a2f1-d7e4099aff6b,Implement CSV export with currency formatting in src/api/client.ts. Follow the existing patterns.,edit_file; run_terminal_cmd; run_terminal_cmd
+cursor:bubbleId:70f56e26-ea10-42dc-ad21-72f6cf61ede2:a9b1fa42-88b3-400e-a6a0-39a42ce572aa,Set up a Makefile target for lint + test + build.,run_terminal_cmd

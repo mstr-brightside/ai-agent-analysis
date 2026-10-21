@@ -1,0 +1,13 @@
+{
+  "name": "@agentspend/contract",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zod schemas and types for every API response. No logic.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.6"
+  }
+}

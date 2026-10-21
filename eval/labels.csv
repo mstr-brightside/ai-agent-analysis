@@ -1,0 +1,31 @@
+id,label,note
+claude:ced1a459-1bb6-4e35-8908-9b41d4deb198.jsonl:35,refactor,remove duplication with no behaviour change
+claude:3ad56625-780c-49b0-9e93-eca31a55b4f5.jsonl:1,test,regression test for an already fixed bug
+claude:097c85cb-8e50-484f-824c-504865eb1fa1.jsonl:31,test,increase coverage on existing hook
+claude:f91bef70-05d9-49c7-b0cf-b9d0ce9eedb0.jsonl:1,review,asks for ship-readiness judgement
+claude:b722a3ee-e6f2-4b83-9da3-a569a8d7499c.jsonl:41,review,asks for ship-readiness judgement
+claude:0d3e6c7c-e368-47fb-b26b-dd647ac29d84.jsonl:1,implement,new pagination capability
+claude:2be89086-273c-49e2-bdde-d3803eb95b36.jsonl:16,plan,explicit plan before code; files and risks
+claude:3888cf6f-f20f-4113-9752-143c54690953.jsonl:17,test,write table-driven tests
+claude:d1895bdb-dab3-4094-8525-cab6f86b1ff3.jsonl:1,implement,"implement vs test: path is a test file, but asks for a new middleware with CSV export"
+claude:cb1e3b91-7d6d-4f51-a92a-37c448caff53.jsonl:23,research,"trade-off comparison, no change requested"
+claude:b722a3ee-e6f2-4b83-9da3-a569a8d7499c.jsonl:43,research,"trade-off comparison; research vs plan: comparing options, not a step list"
+claude:b7dab20e-479d-4d1b-b6e4-8ac4e6451e08.jsonl:42,ops,build tooling (Makefile target)
+claude:faad242a-1a49-4e33-b078-05b4c184c7ab.jsonl:29,review,"review vs debug: inspect code for risks, no reported failure"
+claude:46005915-6314-4bc3-9f01-e1d44787f85f.jsonl:1,debug,"debug vs research: cause of a wrong result"
+claude:83faac57-2f56-4652-866d-e486522c4f8d.jsonl:1,implement,new file with new middleware
+claude:2be89086-273c-49e2-bdde-d3803eb95b36.jsonl:7,refactor,rename across repo
+codex:rollout-2026-08-21T15-00-00-c1b2619c-2870-41f9-bbad-a0aedef3b333.jsonl:21,ops,Dockerfile and CI workflow
+codex:rollout-2026-08-07T17-00-00-d9096026-0896-42c0-8e00-fe594778da99.jsonl:2,refactor,extract into own module
+codex:rollout-2026-08-13T15-00-00-a81bc359-3a26-43f4-adbb-91de662782f4.jsonl:27,plan,explicit plan before code; files and risks
+codex:rollout-2026-09-12T08-00-00-9091904d-bf25-4df6-8bd9-88a7ac71cb90.jsonl:29,plan,scope into steps; no code yet
+codex:rollout-2026-08-07T17-00-00-d9096026-0896-42c0-8e00-fe594778da99.jsonl:12,research,how a library works; point to source
+codex:rollout-2026-08-09T18-00-00-0116ccc5-0b7a-4cd7-ad35-8d7fc1d3b88d.jsonl:27,debug,"debug vs test: failing tests, find the cause"
+codex:rollout-2026-09-09T10-00-00-7196c83e-1d1f-46bb-b528-7418db1901b3.jsonl:2,test,regression test for an already fixed bug
+codex:rollout-2026-09-08T08-00-00-c6886ec3-eaf4-4650-82ad-ee37d6a711ac.jsonl:18,research,how a library works; point to source
+cursor:bubbleId:a9d50d94-d1be-4149-a450-4f063d21993b:d0aa7a36-29c4-463c-ad44-f38b75470b00,ops,build tooling (Makefile target)
+cursor:bubbleId:4cfb9fc4-792b-4597-a644-8a00dcb09f2d:15829dd0-71f7-45d0-ac2e-7b1f29552caf,implement,"implement vs refactor: new idempotency behaviour, API kept stable"
+cursor:bubbleId:9f7d32b8-5411-40d8-aaf4-e91b8fca586b:ee7e5213-59a3-47c4-a557-ad99ec881f9d,research,how a library works; point to source
+cursor:bubbleId:70f56e26-ea10-42dc-ad21-72f6cf61ede2:1cdd744c-2dc5-4022-ad41-85556582fb04,debug,"debug vs research: cause of a wrong result"
+cursor:bubbleId:21ef2b01-43e1-46f6-ad40-0e8d0f31747a:580d278b-484d-45b5-a2f1-d7e4099aff6b,implement,new CSV export capability
+cursor:bubbleId:70f56e26-ea10-42dc-ad21-72f6cf61ede2:a9b1fa42-88b3-400e-a6a0-39a42ce572aa,ops,build tooling (Makefile target)

@@ -1,0 +1,39 @@
+{
+  "name": "agentspend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-only analysis of coding-agent session logs: what the work is, what it costs at list prices, where agents go in circles.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "workspaces": [
+    "packages/contract",
+    "packages/core",
+    "packages/sources",
+    "packages/store",
+    "packages/server-node",
+    "packages/web-plain",
+    "tools/gen-cursor-fixture",
+    "tools/eval"
+  ],
+  "scripts": {
+    "dev": "node --disable-warning=ExperimentalWarning scripts/dev.ts",
+    "start": "npm run build:web && node --disable-warning=ExperimentalWarning packages/server-node/src/cli/start.ts",
+    "ingest": "node --disable-warning=ExperimentalWarning packages/server-node/src/cli/ingest.ts",
+    "eval": "node --disable-warning=ExperimentalWarning tools/eval/src/main.ts",
+    "gen:cursor": "node --disable-warning=ExperimentalWarning tools/gen-cursor-fixture/src/main.ts",
+    "build:web": "tsc -p packages/web-plain/tsconfig.build.json",
+    "typecheck": "node scripts/typecheck.ts",
+    "lint": "eslint .",
+    "test": "node --disable-warning=ExperimentalWarning --test \"packages/*/test/**/*.test.ts\" \"tools/*/test/**/*.test.ts\"",
+    "check": "npm run typecheck && npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.12.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.1"
+  }
+}

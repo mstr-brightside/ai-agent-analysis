@@ -1,0 +1,14 @@
+{
+  "name": "@agentspend/store",
+  "version": "0.1.0",
+  "private": true,
+  "description": "node:sqlite storage and incremental ingest.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@agentspend/core": "*",
+    "zod": "^4.6.6"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@agentspend/gen-cursor-fixture",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Seeded generator for the synthetic Cursor state.vscdb fixture.",
+  "type": "module",
+  "exports": {
+    ".": "./src/generate.ts"
+  },
+  "dependencies": {
+    "@agentspend/core": "*",
+    "zod": "^4.6.6"
+  }
+}

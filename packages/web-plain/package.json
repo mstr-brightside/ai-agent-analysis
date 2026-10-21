@@ -1,0 +1,14 @@
+{
+  "name": "@agentspend/web-plain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plain HTML page that reads the JSON API.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@agentspend/contract": "*",
+    "zod": "^4.6.6"
+  }
+}

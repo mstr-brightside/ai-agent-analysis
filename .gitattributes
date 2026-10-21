@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Vendor dataset and generated fixtures: byte-exact, never converted.
+fixtures/** -text
+*.vscdb binary

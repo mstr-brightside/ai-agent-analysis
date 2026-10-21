@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent spend</title>
+    <script type="importmap">
+      { "imports": { "zod": "/vendor/zod/index.js", "@agentspend/contract": "/app/contract/src/index.js" } }
+    </script>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Agent spend <span class="badge">estimated at public API list prices</span></h1>
+      <div class="controls">
+        <label for="snapshot">Snapshot</label>
+        <select id="snapshot"></select>
+        <button id="refresh" type="button" class="button primary">Refresh</button>
+      </div>
+      <div class="meta"><span id="analysed">Loading…</span><output id="refresh-status"></output></div>
+    </header>
+    <!-- Crucially important to keep #main here as main.ts expects it -->
+    <main id="main"></main>
+    <footer>Local only. Prompt text and full project paths never leave this machine; projects are shown by folder name.</footer>
+    <script type="module" src="/app/web-plain/src/main.js"></script>
+  </body>
+</html>

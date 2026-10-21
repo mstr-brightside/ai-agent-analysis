@@ -1,0 +1,10 @@
+{
+  "name": "@agentspend/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pure analysis: normalized model, turns, classification, pricing, waste detection, reports.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
